@@ -1156,9 +1156,9 @@ Number
 StringIdentifier
     : [A-Za-z_] [A-Za-z_0-9]*
     ;
-Hex8 : '0x'[0-9A-fa-f] ;
-Hex4 : '0x'[0-9A-fa-f] ;
-Hex2 : '0x'[0-9A-fa-f] ;
+Hex8 : '0x'[0-9A-Fa-f] ;
+Hex4 : '0x'[0-9A-Fa-f] ;
+Hex2 : '0x'[0-9A-Fa-f] ;
 
 // flags
 NumSize1 : 'NUMERIC_SIZE_1' ;
