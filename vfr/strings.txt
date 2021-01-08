@@ -1,0 +1,7 @@
+0x1,Wireless Device Enable
+0x3,WWAN
+0x4,WLAN
+0x5,Bluetooth
+0x7,The WWAN checkbox enables/disables the WWAN radio.
+0x8,The WWAN checkbox enables/disables the WLAN radio.
+0x9,The WWAN checkbox enables/disables the Bluetooth radio.

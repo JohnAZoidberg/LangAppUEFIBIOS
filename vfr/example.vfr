@@ -1,0 +1,29 @@
+form formid  =  0x8d71,
+  title = STRING_TOKEN(0x1);
+
+  suppressif ideqval WirelessSupportedWWAN == 0,
+  grayoutif ideqval SetupAccess == 0,
+  checkbox varid = WirelessEnableWWAN,
+    prompt = STRING_TOKEN(0x3),
+    help = STRING_TOKEN(0x7),
+    default value = 1,
+  endcheckbox;
+  endif;
+  endif;
+
+  grayoutif ideqval SetupAccess == 0,
+  checkbox varid = WirelessEnableWLAN,
+    prompt = STRING_TOKEN(0x4),
+    help = STRING_TOKEN(0x8),
+    default value = 1,
+  endcheckbox;
+  endif;
+
+  grayoutif ideqval SetupAccess == 0,
+  checkbox varid = WirelessEnableBT,
+    prompt = STRING_TOKEN(0x5),
+    help = STRING_TOKEN(0x9),
+    default value = 1,
+  endcheckbox;
+  endif;
+endform;
